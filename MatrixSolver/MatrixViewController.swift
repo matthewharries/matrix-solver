@@ -16,6 +16,10 @@ class MatrixViewController: UIViewController {
     @IBOutlet weak var rowsTextField: UITextField!
     @IBOutlet weak var columnsTextField: UITextField!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var matrixLeadingConstraint: NSLayoutConstraint!
+    @IBOutlet weak var matrixTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var matrixBottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var matrixTrailingConstraint: NSLayoutConstraint!
     
     
     private var rows: Int = 3
@@ -29,6 +33,10 @@ class MatrixViewController: UIViewController {
         columnsTextField.delegate = self
         rowsTextField.text = "\(rows)"
         columnsTextField.text = "\(columns)"
+//        setUpMatrix()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         setUpMatrix()
     }
     
@@ -55,6 +63,9 @@ class MatrixViewController: UIViewController {
             matrixStackView.addArrangedSubview(rowStackView)
             matrixTextViews.append(textFields)
         }
+        scrollView.setNeedsLayout()
+        scrollView.layoutIfNeeded()
+        centerMatrix()
     }
     
     private func getConstraints(forTextView textView: UITextField) -> [NSLayoutConstraint] {
@@ -63,6 +74,22 @@ class MatrixViewController: UIViewController {
         let minWidthConstraint = NSLayoutConstraint(item: textView, attribute: .width, relatedBy: .greaterThanOrEqual, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 60)
         let maxWidthConstraint = NSLayoutConstraint(item: textView, attribute: .width, relatedBy: .lessThanOrEqual, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 100)
         return [minWidthConstraint, minHeightConstraint, maxWidthConstraint, maxHeightConstraint]
+    }
+    
+    private func centerMatrix() {
+        if matrixStackView.frame.size.width < scrollView.frame.size.width {
+            matrixLeadingConstraint.constant = (scrollView.frame.size.width - matrixStackView.frame.size.width) / 2
+        } else {
+            matrixLeadingConstraint.constant = 4
+        }
+        
+        if matrixStackView.frame.size.height < scrollView.frame.size.height {
+            matrixTopConstraint.constant = (scrollView.frame.size.height - matrixStackView.frame.size.height) / 2
+        } else {
+            matrixTopConstraint.constant = 4
+        }
+        scrollView.setNeedsLayout()
+        scrollView.layoutIfNeeded()
     }
 }
 

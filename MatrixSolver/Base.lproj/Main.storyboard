@@ -22,13 +22,13 @@
                                 <rect key="frame" x="16.5" y="20" width="342.5" height="343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pza-x6-23X">
-                                        <rect key="frame" x="4.5" y="4" width="342.5" height="343"/>
+                                        <rect key="frame" x="4.5" y="4" width="166" height="40"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9Tq-J6-BHM">
-                                                <rect key="frame" x="88.5" y="0.0" width="166" height="343"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="166" height="40"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="74x-yn-avr">
-                                                        <rect key="frame" x="0.0" y="151.5" width="50" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="40"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="OTA-hd-lQI"/>
@@ -41,7 +41,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I8p-tL-cPG">
-                                                        <rect key="frame" x="58" y="151.5" width="50" height="40"/>
+                                                        <rect key="frame" x="58" y="0.0" width="50" height="40"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="7ym-0L-Oj2"/>
@@ -54,7 +54,7 @@
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="786-J2-iVI">
-                                                        <rect key="frame" x="116" y="151.5" width="50" height="40"/>
+                                                        <rect key="frame" x="116" y="0.0" width="50" height="40"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="Cwi-Xs-j4B"/>
@@ -76,47 +76,45 @@
                                     <constraint firstItem="Pza-x6-23X" firstAttribute="top" secondItem="KPU-K1-6cr" secondAttribute="top" constant="4" id="5Sg-c3-EAG"/>
                                     <constraint firstAttribute="bottom" secondItem="Pza-x6-23X" secondAttribute="bottom" constant="4" id="7Ad-5u-L39"/>
                                     <constraint firstAttribute="trailing" secondItem="Pza-x6-23X" secondAttribute="trailing" constant="4" id="Cmy-EE-vhe"/>
-                                    <constraint firstItem="Pza-x6-23X" firstAttribute="width" relation="greaterThanOrEqual" secondItem="KPU-K1-6cr" secondAttribute="width" id="Ofy-fl-x9u"/>
-                                    <constraint firstItem="Pza-x6-23X" firstAttribute="height" relation="greaterThanOrEqual" secondItem="KPU-K1-6cr" secondAttribute="height" id="P4E-xH-NPD"/>
                                 </constraints>
                             </scrollView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZKb-gG-k9q">
-                                <rect key="frame" x="65" y="377" width="246" height="24"/>
+                                <rect key="frame" x="55" y="371" width="266" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rows:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nue-YB-XFu">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="24"/>
+                                        <rect key="frame" x="0.0" y="3" width="60" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="d1S-2j-Mvn"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="d1S-2j-Mvn"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ff8-EH-gNC">
-                                        <rect key="frame" x="72" y="0.0" width="30" height="24"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ff8-EH-gNC">
+                                        <rect key="frame" x="72" y="0.0" width="40" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="GE5-ZK-jpF"/>
+                                            <constraint firstAttribute="width" constant="40" id="GE5-ZK-jpF"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="go"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Columns:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsn-So-K9P">
-                                        <rect key="frame" x="114" y="0.0" width="90" height="24"/>
+                                        <rect key="frame" x="124" y="3" width="90" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="90" id="13R-Fw-wQZ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="13R-Fw-wQZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-iY-1sK">
-                                        <rect key="frame" x="216" y="0.0" width="30" height="24"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-iY-1sK">
+                                        <rect key="frame" x="226" y="0.0" width="40" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="ULd-CB-rHc"/>
+                                            <constraint firstAttribute="width" constant="40" id="ULd-CB-rHc"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" returnKeyType="go"/>
                                     </textField>
                                 </subviews>
@@ -135,7 +133,11 @@
                     </view>
                     <connections>
                         <outlet property="columnsTextField" destination="JwJ-iY-1sK" id="tiT-Uo-kH0"/>
+                        <outlet property="matrixBottomConstraint" destination="7Ad-5u-L39" id="k6a-BC-8VF"/>
+                        <outlet property="matrixLeadingConstraint" destination="58S-Wd-Mze" id="2Hp-yd-s2g"/>
                         <outlet property="matrixStackView" destination="Pza-x6-23X" id="vmW-uo-xrh"/>
+                        <outlet property="matrixTopConstraint" destination="5Sg-c3-EAG" id="lH9-vl-LEJ"/>
+                        <outlet property="matrixTrailingConstraint" destination="Cmy-EE-vhe" id="3qD-Fc-edD"/>
                         <outlet property="rowsTextField" destination="ff8-EH-gNC" id="gXg-T5-dpw"/>
                         <outlet property="scrollView" destination="KPU-K1-6cr" id="ADG-Fi-b0n"/>
                     </connections>
