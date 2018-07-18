@@ -15,19 +15,23 @@ class MatrixViewController: UIViewController {
     @IBOutlet weak var matrixStackView: UIStackView!
     @IBOutlet weak var rowsTextField: UITextField!
     @IBOutlet weak var columnsTextField: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     
     private var rows: Int = 3
     private var columns: Int = 3
+
     private var matrixTextViews: [[UITextField]] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         rowsTextField.delegate = self
         columnsTextField.delegate = self
+        rowsTextField.text = "\(rows)"
+        columnsTextField.text = "\(columns)"
         setUpMatrix()
     }
-
+    
     private func setUpMatrix() {
         matrixStackView.removeAllArrangedSubviews()
         matrixTextViews.removeAll()
@@ -39,7 +43,8 @@ class MatrixViewController: UIViewController {
                 textField.backgroundColor = .groupTableViewBackground
                 textField.textAlignment = .center
                 textField.contentVerticalAlignment = .center
-                textField.font = UIFont.systemFont(ofSize: 24)
+                textField.font = UIFont.systemFont(ofSize: 20)
+                textField.keyboardType = .decimalPad
                 textFields.append(textField)
             }
             let rowStackView = UIStackView(arrangedSubviews: textFields)
