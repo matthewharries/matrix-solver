@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A510BB420FEBE33004CB998 /* VerticallyCenteredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A510BB320FEBE33004CB998 /* VerticallyCenteredTextView.swift */; };
 		0AD686EE20EC0C4E001644B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD686ED20EC0C4E001644B0 /* AppDelegate.swift */; };
-		0AD686F020EC0C4E001644B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD686EF20EC0C4E001644B0 /* ViewController.swift */; };
 		0AD686F320EC0C4E001644B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD686F120EC0C4E001644B0 /* Main.storyboard */; };
 		0AD686F520EC0C4F001644B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AD686F420EC0C4F001644B0 /* Assets.xcassets */; };
 		0AD686F820EC0C4F001644B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AD686F620EC0C4F001644B0 /* LaunchScreen.storyboard */; };
 		0AD6870320EC0C4F001644B0 /* MatrixSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6870220EC0C4F001644B0 /* MatrixSolverTests.swift */; };
+		0AD6870E20EC233F001644B0 /* MatrixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6870D20EC233F001644B0 /* MatrixViewController.swift */; };
+		0AD6871020EC2ADD001644B0 /* UIStackView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD6870F20EC2ADD001644B0 /* UIStackView+extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A510BB320FEBE33004CB998 /* VerticallyCenteredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticallyCenteredTextView.swift; sourceTree = "<group>"; };
 		0AD686EA20EC0C4E001644B0 /* MatrixSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD686ED20EC0C4E001644B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AD686EF20EC0C4E001644B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0AD686F220EC0C4E001644B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AD686F420EC0C4F001644B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AD686F720EC0C4F001644B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		0AD686FE20EC0C4F001644B0 /* MatrixSolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatrixSolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD6870220EC0C4F001644B0 /* MatrixSolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixSolverTests.swift; sourceTree = "<group>"; };
 		0AD6870420EC0C4F001644B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AD6870D20EC233F001644B0 /* MatrixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixViewController.swift; sourceTree = "<group>"; };
+		0AD6870F20EC2ADD001644B0 /* UIStackView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +81,10 @@
 		0AD686EC20EC0C4E001644B0 /* MatrixSolver */ = {
 			isa = PBXGroup;
 			children = (
+				0AD6870F20EC2ADD001644B0 /* UIStackView+extension.swift */,
 				0AD686ED20EC0C4E001644B0 /* AppDelegate.swift */,
-				0AD686EF20EC0C4E001644B0 /* ViewController.swift */,
+				0AD6870D20EC233F001644B0 /* MatrixViewController.swift */,
+				0A510BB320FEBE33004CB998 /* VerticallyCenteredTextView.swift */,
 				0AD686F120EC0C4E001644B0 /* Main.storyboard */,
 				0AD686F420EC0C4F001644B0 /* Assets.xcassets */,
 				0AD686F620EC0C4F001644B0 /* LaunchScreen.storyboard */,
@@ -197,7 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD686F020EC0C4E001644B0 /* ViewController.swift in Sources */,
+				0A510BB420FEBE33004CB998 /* VerticallyCenteredTextView.swift in Sources */,
+				0AD6871020EC2ADD001644B0 /* UIStackView+extension.swift in Sources */,
+				0AD6870E20EC233F001644B0 /* MatrixViewController.swift in Sources */,
 				0AD686EE20EC0C4E001644B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
